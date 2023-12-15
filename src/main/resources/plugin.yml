@@ -1,0 +1,99 @@
+name: SimpleInventories
+version: '${project.version}'
+main: simplexity.simpleinventories.SimpleInventories
+api-version: '1.20'
+permissions:
+  simpleinv.reload:
+    description: Reloads the Simple Player Utils config and locale
+    default: op
+  simpleinv.anvil:
+    description: Allows a player to use the anvil menu
+    default: op
+  simpleinv.other.anvil:
+    description: Allows a player to open an anvil menu for another player
+    default: op
+  simpleinv.cartography:
+    description: Allows a player to open a cartography table
+    default: op
+  simpleinv.other.cartography:
+    description: Allows a player to open a cartography table for another player
+    default: op
+  simpleinv.crafting:
+    description: Allows a player to open a crafting menu
+    default: op
+  simpleinv.other.crafting:
+    description: Allows a player to open a crafting menu for other players
+    default: op
+  simpleinv.grindstone:
+    description: Allows a player to open a grindstone
+    default: op
+  simpleinv.other.grindstone:
+    description: Allows a player to open a grindstone for another player
+    default: op
+  simpleinv.loom:
+    description: Allows a player to open a loom
+    default: op
+  simpleinv.other.loom:
+    description: Allows a player to open a loom for another player
+    default: op
+  simpleinv.smithing:
+    description: Allows a player to open a smithing table
+    default: op
+  simpleinv.other.smithing:
+    description: Allows a player to open a smithing table for another player
+    default: op
+  simpleinv.stonecutter:
+    description: Allows a player to open a stonecutter
+    default: op
+  simpleinv.other.stonecutter:
+    description: Allows a player to open a stonecutter for another player
+    default: op
+  simpleinv.enderchest:
+    description: Allows a player to open their own enderchest
+    default: op
+  simpleinv.other.enderchest:
+    description: Allows a player to open another player's enderchest for them (does not look into their enderchest)
+    default: op
+  simpleinv.trash:
+    description: Allows a player to open an inventory to throw away items
+    default: op
+  simpleinv.other.trash:
+    description: Allows a player to open a trash menu for other players
+    default: op
+commands:
+  anvil:
+    description: opens an anvil
+    permission: simpleinv.anvil
+  cartography:
+    description: opens a cartography table
+    permission: simpleinv.cartography
+    aliases: [ cart, carto ]
+  craft:
+    description: opens a crafting menu
+    permission: simpleinv.crafting
+    aliases: [ workbench, wb, bench ]
+  grindstone:
+    description: opens a grindstone
+    permission: simpleinv.grindstone
+    aliases: [ grind ]
+  loom:
+    description: opens a loom
+    permission: simpleinv.loom
+  smithing:
+    description: opens a smithing table
+    permission: simpleinv.smithing
+    aliases: [ smith ]
+  stonecutter:
+    description: opens a stonecutter
+    permission: simpleinv.stonecutter
+  enderchest:
+    description: opens an enderchest
+    permission: simpleinv.enderchest
+    aliases: [ ec, ender, end ]
+  trash:
+    description: opens an inventory that will delete items on closing
+    permission: simpleinv.trash
+    aliases: [ disposal, garbage, lava ]
+  sireload:
+    description: reloads the configuration
+    permission: simpleinv.reload
