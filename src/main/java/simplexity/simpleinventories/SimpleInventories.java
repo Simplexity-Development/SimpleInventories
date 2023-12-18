@@ -100,9 +100,4 @@ public final class SimpleInventories extends JavaPlugin {
     public static Logger getSILogger() {
         return instance.getLogger();
     }
-    
-    @Override
-    public void onDisable() {
-        // Plugin shutdown logic
-    }
 }

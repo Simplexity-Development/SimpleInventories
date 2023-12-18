@@ -64,9 +64,6 @@ public abstract class AbstractInventoryCommand implements CommandExecutor {
         return permission;
     }
     
-    public Permission getAdminPermission() {
-        return adminPermission;
-    }
     
     public Sound getSound() {
         return sound;
@@ -81,9 +78,6 @@ public abstract class AbstractInventoryCommand implements CommandExecutor {
         return playerLocation;
     }
     
-    public String getSuccessOnOther() {
-        return successOnOther;
-    }
 }
 
 

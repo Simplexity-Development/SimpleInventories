@@ -19,7 +19,7 @@ import java.util.UUID;
 
 public class InventoryCloseListener implements Listener {
     
-    final HashMap<UUID, Inventory> inventoryHashMap = TrashCommand.getInvMap();
+    private final HashMap<UUID, Inventory> inventoryHashMap = TrashCommand.getInvMap();
     
     
     @EventHandler(priority = EventPriority.NORMAL, ignoreCancelled = true)

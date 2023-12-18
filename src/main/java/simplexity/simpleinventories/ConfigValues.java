@@ -14,7 +14,7 @@ public class ConfigValues {
         if (instance == null) instance = new ConfigValues();
         return instance;
     }
-    private static final HashSet<Material> trashBlacklist = new HashSet<>();
+    private final HashSet<Material> trashBlacklist = new HashSet<>();
     public Sound craftingSound, anvilSound, cartographySound, stonecutterSound, smithingSound,
             grindstoneSound, loomSound, enderchestSound, trashSound, trashAlert;
     
@@ -28,7 +28,7 @@ public class ConfigValues {
         reloadInventorySounds(config);
         reloadLocale(config);
     }
-    private static void fillBlacklist(FileConfiguration config) {
+    private void fillBlacklist(FileConfiguration config) {
         trashBlacklist.clear();
         List<String> configuredTrashList = config.getStringList("trash-blacklist");
         for (String item : configuredTrashList) {
